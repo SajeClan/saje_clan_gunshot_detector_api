@@ -88,7 +88,7 @@ Returns a simple health check response to ensure the API is running.
 Uploads an audio file and runs it through the gunshot detection model.
 
 - **Request:** A file upload (`multipart/form-data`)
-  - `file`: The audio file to be analyzed.
+  - `file`: The audio file to be analyzed. Must be a WAVE file (.WAV)
 - **Response:** JSON response indicating the result of the detection.
 
   - If a gunshot is detected, a message is sent to the configured Telegram group.
